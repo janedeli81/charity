@@ -1,0 +1,191 @@
+/* Basic Reset */
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 5%;
+    flex: 1; /* This allows the main content to expand and push the footer down */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+    padding: 10px 20px;
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.logo-name {
+    color: aquamarine;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5), -1px -1px 5px rgba(255,255,255,0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-decoration: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.header-li {
+    color: aqua;
+    text-decoration: none;
+}
+
+.header-a {
+    color: beige;
+     text-decoration: none;
+}
+
+footer {
+    background-color: coral;
+    color: aquamarine;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+@keyframes appearFromCenter {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.main-content {
+  animation: appearFromCenter 0.5s ease-out forwards;
+}
+
+.img-home {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use viewport height to ensure container can expand fully */
+}
+
+main {
+    flex: 1; /* This allows the main content to expand and push the footer */
+}
+
+/*footer {*/
+/*    background-color: #003366;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 10px 0;*/
+/*}*/
+.h1-home {
+    margin-left: 30%;
+}
+
+.description-home {
+    margin-left: 10%;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin: 0; /* Use full width when sidebar is hidden */
+    }
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller headings on small screens */
+    }
+}
+/* Base styles here */
+
+/* Example: Adjust layout for screens narrower than 600px */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        margin-bottom: 20px; /* Add space below the logo */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Increase space between nav items */
+    }
+}
+
+
+p {
+    margin: 1em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Max width for large screens */
+    margin: auto; /* Center the container */
+}
+
+.donate-button {
+    background-color: darkorange;
+    width: 80px;
+    height: 30px;
+    text-decoration-color: darkturquoise;
+}
