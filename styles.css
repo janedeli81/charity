@@ -10,7 +10,7 @@ html {
 }
 
 main {
-    margin-top: 5%;
+    margin-top: 1%;
     flex: 1; /* This allows the main content to expand and push the footer down */
     margin-left: 5%;
     margin-right: 5%;
@@ -188,4 +188,52 @@ p {
     width: 80px;
     height: 30px;
     text-decoration-color: darkturquoise;
+}
+
+.about-content {
+    margin: 10px auto;
+    background-image: url("/src/main_about.jpg");
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: bisque;
+}
+
+.projects-content {
+    background-image: url("/src/projects_main.jpg");
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: bisque;
+}
+
+.donate-content {
+    background-image: url("/src/donate_main.jpg");
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: bisque;
+}
+
+.blog-post {
+   display: flex;
+    align-items: stretch; /* This ensures that children of .article stretch to fill the container */
+    margin-bottom: 20px; /* Space between articles */
+}
+
+.text-content, .image-content {
+    flex: 1; /* This ensures that text and image content take up equal width */
+    padding: 10px; /* Padding for some space inside the content areas */
+}
+
+.image-content img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* This will cover the area of the div without losing aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column; /* Stack the text and image vertically on small screens */
+    }
 }
